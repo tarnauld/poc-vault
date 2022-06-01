@@ -1,0 +1,7 @@
+services:
+  my-java-app:
+    build: ./poc-vault/
+    ports:
+      - "8080:8080"
+    environment:
+      - ENVVARIABLE=${HOST_ENV_VARIABLE}
